@@ -1,0 +1,6 @@
+s="$1"
+shift
+for i in "$@"; do
+    n="${i}${s}"
+    mv "$i" "$n"
+done
